@@ -1,11 +1,51 @@
-let score = "Anurag"
+/*
+Value                       To String                    To Number              To Boolean
+
+123                          "123"                        123                     true
+
+"456"                        "456"                        456                     true
+
+"abc"                        "abc"                        NaN                     true
+
+true                         "true"                        1                      true
+
+false                        "false"                       0                      false
+
+null                         "null"                        0                      false
+
+undefined                    "undefined"                  NaN                     false
+
+[]                           ""                            0                      true
+
+[1, 2, 3]                    "1,2,3"                      NaN                     true
+
+{}                           "[object Object]"            NaN                     true
+
+function(){}                 "function(){}"               NaN                     true
+*/
+
+let score = "Anurag";
 
 //console.log(typeof score);
 //console.log(typeof(score));
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score);
+
 //console.log(typeof valueInNumber);
 //console.log(valueInNumber);
+
+let result;
+result = parseInt('20.01');
+console.log(result); // 20
+
+result = parseFloat('20.01');
+console.log(result); // 20.01
+
+result = +'20.01';
+console.log(result); // 20.01
+
+result = Math.floor('20.01');
+console.log(result); // 20
 
 
 // "33" => 33
@@ -21,11 +61,23 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 // "" => false
 // "Anurag" => true
 
-let someNumber = 33
+/*
+The conversion rules state that undefined, null, 0, NaN, and '' will convert to false
+*/
 
-let stringNumber = String(someNumber)
+let someNumber = 33;
+
+let stringNumber = String(someNumber);
+let stringNumber1 = toString(someNumber);
+
+
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
+
+/*
+String() takes null and undefined and converts them to string. 
+However, toString() gives errors when null is passed.
+*/
 
 // *********************** Operations ***********************
 
