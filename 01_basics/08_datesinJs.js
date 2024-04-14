@@ -1,6 +1,19 @@
 // Dates
+/* 
+    JavaScript Date objects represent a single moment in time in a platform-independent format.
+    Date objects encapsulate an integral number that represents milliseconds since the midnight
+    at the beginning of January 1, 1970, UTC (the epoch).
+*/
 
-let myDate = new Date()
+/*
+    For Future
+    Date has been a long-standing pain point in ECMAScript.
+    This is a proposal for Temporal, a global Object that acts as a top-level namespace (like Math),
+    that brings a modern date/time API to the ECMAScript language.
+*/
+
+
+let myDate = new Date()                          
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
 // console.log(myDate.toLocaleString());
